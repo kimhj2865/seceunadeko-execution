@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+body{ background:black; margin: auto; transition: 0.8s ease-in-out;}
+		p {color: white; margin: 0px; padding: 30px 30px 0px 30px; font-family: 'DOSGothic'; line-height: 180%; font-size: 1.2rem;}
+		p2 {color: white; margin: 0px; font-family: 'DOSGothic'; line-height: 180%; font-size: 0.8rem;}
+		a {text-decoration-line: none;}
+		span{margin: 0px; padding: 5px 0px; font-family:'DOSGothic';font-size: 1.1rem; }
+
+		.text-box p {display: none;}
+		.name-box span { margin: 0px; padding: 15px 15px 0px 15px; display: inline-block;font-family: 'DOSGothic'; font-weight:normal; }
+		.wrap {width: 1000px; height: 600px ; padding: 0px; margin: auto; background: black; position: relative;}
+		.top { width: 100%;}
+
+
+		.home-botton {padding: 40px; display: flex; justify-content: center; align-items: center; }
+		.home-botton img:hover{content:url(../img/botton/botton-home.png); }
+		.text-box{padding: 10px; background: black; width:700px; height: 150px; margin: auto; position:relative; left: -105px; top:400px; z-index: 10; border: 2px solid white;}
+		.name-box{width: auto; height: 50px; background: white; color: black; position: absolute; top: -52px; left: -2px;}
+		.heart{background: black; width: 180px; height: 80px; position: absolute; right: 20px; top: 20px;}
+		.face{background: black; width: 180px; height: 180px; position: absolute; right: 20px; top: 120px;}
+		.status{background: black; width: 180px; height:260px; position: absolute; right: 20px; top: 320px;}
+		.main-image{background: black; width: 560px; height:180px; position: absolute; left: 80px; top: 100px; border: 2px solid white; z-index: 0;}
+		.character{ width:360px; height:400px; position:absolute; left:420px; top: 10px; z-index: 4}
+		.text {color: white; font-family: 'DOSGothic'; line-height: 180%; font-size: 1.2rem; transition: opacity 0.3s ease-in-out;}
+		#main-big{position: absolute; z-index: 2; display: none; transition: opacity 0.3s ease-in-out;}
+
+
+		.title{background-image:url(../img/title.gif);background-position: center;}
+		.botton-start{width: 150px; height:45px; background: black; border: 2px solid white; text-align: center;}
+		.botton-start p:hover{background: white; color: black; margin: 0px;}
+
+		.Friends{background-image: url(../img/friendPage/friendPage.png);}
+		.Friends img {position: absolute;}
+		.chapter1:hover {content: url('../img/friendPage/chapter1-over.png');}
+		.chapter1-5:hover {content: url('../img/friendPage/chapter1.5-over.png');}
+		.chapter2:hover {content: url('../img/friendPage/chapter2-over.png');}
+		.chapter3:hover {content: url('../img/friendPage/chapter3-over.png');}
+		.chapter3-5:hover {content: url('../img/friendPage/chapter3.5-over.png');}
+		.chapter4:hover {content: url('../img/friendPage/chapter4-over.png');}
+		.chapter4-5:hover {content: url('../img/friendPage/chapter4.5-over.png');}
+		.chapter5:hover {content: url('../img/friendPage/chapter5-over.png');}
+
+#selector-wrapper {z-index: 6; opacity: 0; transition: 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    display: grid;
+    position: absolute;
+}
+
+#selector {
+    display: flex;
+    flex-flow: column; place-items: center; position: absolute; top: 130px; left: 140px;}
+
+#selector li { 
+    width: 350px;
+    height: 40px;
+    background: black;
+    border: 2px solid white;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+#selector li:hover{
+    background:white; color: black;
+    transition: 0.3s ease-in-out;
+}
+
+#selector li + li {
+    margin-top: 1em;
+}
